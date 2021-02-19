@@ -15,3 +15,12 @@ const title = resposne.potentitalMaliciousInput;
 // 直接使用是安全的：
 const element2 = <h1>{title}</h1>;
 
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
+}
